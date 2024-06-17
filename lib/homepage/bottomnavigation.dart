@@ -34,33 +34,26 @@ class _BottomNavigationState extends State<BottomNavigation> {
             _currentIndex = index;
           });
         },
-        items: [
+        items: const [
           BottomNavigationBarItem(
-            icon: Image.asset(
-              "assets/home.png",
+            icon: Icon(
+              Icons.bookmark_outline,
+              size: 30,
             ),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Container(
-              width: 39,
-              height: 39,
-              decoration: BoxDecoration(
-                color: Colors.orange, // Set the background color
-                borderRadius: BorderRadius.circular(50.0), // Make it circular
-              ),
-              child: const Center(
-                child: Icon(
-                  Icons.home,
-                  color: Colors.white,
-                  size: 30,
-                ),
-              ),
+            icon: Icon(
+              Icons.folder_outlined,
+              size: 30,
             ),
             label: 'Home',
           ),
-          const BottomNavigationBarItem(
-            icon: Icon(Icons.message_rounded),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.message_outlined,
+              size: 30,
+            ),
             label: 'Settings',
           ),
         ],

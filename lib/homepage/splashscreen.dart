@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
         initialActiveIndex: 0,
         style: TabStyle.titled,
         backgroundColor: Colors.orange,
-        items: [
+        items: const [
           TabItem(icon: Icons.arrow_right_alt, title: 'Profile'),
         ],
         onTap: (int i) {
@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           children: [
             Image.asset(
-              'assets/spoit.png',
+              'assets/education.png',scale: 1.0,
               width: 300,
               height: 300,
             ),
